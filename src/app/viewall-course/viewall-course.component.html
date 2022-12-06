@@ -1,0 +1,39 @@
+<app-navbar></app-navbar>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-mg-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                          
+                            <th scope="col">Course Title</th>
+                            <th scope="col">Course Description</th>
+                            <th scope="col">Course Duration</th>
+                            <th scope="col">Course Date</th>
+                            <th scope="col">Course Venue</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let i of data" >
+                            
+                            <td>{{i.title}}</td>
+                            <td>{{i.description}}</td>
+                            <td>{{i.duration}}</td>
+                            <td>{{i.date}}</td>
+                            <td>{{i.venue}}</td>
+                           
+                          </tr>
+                        
+                        </tbody>
+                      </table>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
